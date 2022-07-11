@@ -1,0 +1,150 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Helvetica, sans-serif;
+}
+html{
+    margin-left: 4rem;
+    margin-right: 2rem;
+    margin-bottom: 1rem;
+}
+
+/*h1{
+    font-family: Helvetica, sans-serif;
+    font-size: 2.2em;
+}*/
+
+/*Header*/
+.yt_logo{
+    width: 20%;
+}
+input[type=search]{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+input[type=submit] {
+    background-color: #FF0000;
+    color: white;
+    padding: 10px 18px;
+    margin: 8px 0;
+    border: 5px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+input[type=submit]:hover {
+    background-color:  black;
+}
+
+/*Youtube Videos*/
+.result {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    overflow: scroll;
+    overflow-x: auto;
+    overflow-y: hidden;
+    text-overflow: ellipsis;
+}
+.thumb {
+    padding-top: 15px;
+}
+.video {
+    width: 28%;
+    height: 50%;
+    margin-right: 2%;
+}
+.video a:link {
+    color: black;
+    background-color: transparent;
+    text-decoration: none;
+}
+.video a:visited {
+    color: black;
+    background-color: transparent;
+    text-decoration: none;
+}
+.desc {
+    color: rgb(62, 56, 56);
+    font-weight: 400;
+    width: 100%;
+    font-size: small;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+.title{
+    padding-top: 2%;
+}
+.date{
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+.channelId{
+    padding-bottom: 3%;
+}
+.date p{
+    font-size: x-small;
+}
+
+/*Pagination*/
+.buttons {
+    display: flex;
+    margin-top: 9px;
+    justify-content: center;
+    width: 100%;
+}
+.page {
+    position: relative;
+    right: 5%;
+    margin: 10px;
+    width: 40px;
+    height: 30px;
+    border-radius: 12px;
+    display: flex;
+    cursor: pointer;
+    padding: 5px 10px;
+}
+.page button {
+ display: inline-block;
+}
+
+/*Load*/
+.tog {
+    height: 2px;
+    width: 0px;
+    background-color: red;
+    animation-name: reducetime;
+    animation-duration: 2s;
+    float: left;
+}
+@keyframes reducetime {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+
+@media screen and (max-width : 1050px){
+    .video{
+        overflow-x: hidden;
+        width: 100%; 
+    }
+    .yt_logo{
+        width: 40%;
+    }
+    .result{
+        flex-direction: column;
+    }
+    .buttons{
+        position: relative;
+        right: 18%;
+    }
+}

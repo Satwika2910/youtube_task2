@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube</title>
+    <link rel = "icon" href = "https://vkbesttricks.com/wp-content/uploads/2021/06/Vanced-PNG.png"  type = "image/x-icon">
+    <link href="yt_style.css" rel="stylesheet">
+
+</head>
+<body onload="renderSearch()">
+    <div id="load"></div>
+    <header>
+        <br>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/YouTube_Logo_2017.svg/1280px-YouTube_Logo_2017.svg.png" class="yt_logo" alt="yt_logo">
+        <div class="search_box">
+            <input type="search" class="search-box" id="search_value" placeholder="Search">
+            <br>
+            <input type="submit" id="search-btn" class="btn" value="Search" onclick="renderSearch()">
+        </div>
+    </header>
+    <div class="result" id="resultDiv"></div>
+    <div class="buttons"><div class="page"></div></div>
+</body>
+    <script src="yt_script.js"></script>
+</html>
